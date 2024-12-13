@@ -5,6 +5,7 @@
 This project aims to build a machine learning model to predict the likelihood of diabetes based on various health-related indicators. The dataset used in this project comes from the 2023 Behavioral Risk Factor Surveillance System (BRFSS) survey, which captures data on a wide range of health behaviors and conditions across various demographics. The target variable classifies individuals into two categories: diabetic and non-diabetic (including pre-diabetes).
 
 The project follows a complete pipeline that involves:
+
 - Data preprocessing.
 - Addressing class imbalance.
 - Training a robust Artificial Neural Network (ANN) for prediction.
@@ -16,7 +17,6 @@ The project follows a complete pipeline that involves:
 - **Dataset**: [BRFSS 2023 Annual Data](https://www.cdc.gov/brfss/annual_data/annual_2023.html)
 - **Referred Code**: [Diabetes Health Indicators Notebook](https://www.kaggle.com/code/alexteboul/diabetes-health-indicators-dataset-notebook/notebook)
 - **Health Indicator References**: [CDC - PCD Article (2019)](https://www.cdc.gov/pcd/issues/2019/19_0109.htm)
-
 
 ---
 
@@ -40,7 +40,6 @@ The dataset includes various health indicators and a binary target variable (`Di
 
 - **Train-Test Split**:
   - The dataset was split into training (70%) and testing (30%) subsets using a stratified approach to maintain class distribution.
-
 
 ### 3. **Handling Class Imbalance**
 
@@ -91,7 +90,7 @@ The model's performance was evaluated using:
 
 The model demonstrated high accuracy and robust performance on the test set, making it a reliable tool for diabetes prediction based on health indicators.
 
-### Key Metrics:
+### Key Metrics
 
 #### **Accuracy**: 75%
 
@@ -110,13 +109,25 @@ The model demonstrated high accuracy and robust performance on the test set, mak
 ## Usage
 
 To reproduce this project:
+
 1. Install dependencies:
+
    ```bash
    pip install pandas numpy scikit-learn imbalanced-learn tensorflow
    ```
+
 2. Place the dataset in the specified path: `Data/diabetes_binary_5050split_health_indicators_BRFSS2023.csv`.
+
 3. Run the script.
 
 ## Conclusion
 
 This project demonstrates how to process and model health-related data to predict diabetes using machine learning techniques. The dataset was preprocessed to handle missing values, reclassify variables, and balance the target classes. A neural network was trained, and its performance evaluated to predict diabetes effectively.
+
+## Contributors
+
+- Yen Lu
+- Bryan Hamilton-Brown
+- Stephanie Ayala
+- Nebiat Beyene
+- Adebola Shellby
